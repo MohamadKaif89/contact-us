@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  </head>
+  <body >
+    <div class="main-section">
+    <!-- Header Section -->
+    <header class="desktop-header">
+      <div class="navbar-container">
+        <div class="logo">
+          <h2>Logo Here</h2>
+        </div>
+
+        <!-- Navbar with icons inside list -->
+        <nav class="navbar">
+          <ul>
+            <div class="main_li_1">
+            <li><a href="#">Home</a></li>
+            <li class="dropdown">
+              <div>
+              <a href="#">Features</a>
+              <span class="dropdown-icon">
+                <img src="./assests/Arrow 1 (1).png" alt="dropdown icon" />
+              </span>
+              </div>
+            </li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            </div>
+            <div class="icon-box">
+            <li>
+              <span class="account-icon">
+                <img src="./assests/Mask group.png" alt="navicon" />
+              </span>
+            </li>
+            <li>
+              <span class="account-icon">
+                <img src="./assests/bi_cart.png" alt="navicon" />
+              </span>
+            </li>
+            </div>
+          </ul>
+        </nav>
+      </div>
+      
+    </header>
+
+      <!-- HAMBURGER BUTTON -->
+  <button class="menu-open"><img src="./assests/hamberger.png" alt="icon"></button>
+
+  <!-- MOBILE MENU OVERLAY -->
+  <header id="mobileMenu">
+    <div class="navbar-container2">
+      <div class="logo">
+        <h2>Logo Here</h2>
+      </div>
+
+      <nav class="navbar">
+        <ul>
+          <div class="main_li_1">
+            <li><a href="#">Home</a></li>
+            <li class="dropdown">
+              <div>
+                <a href="#">Features</a>
+                <span class="dropdown-icon">
+                  <img src="./assests/Arrow 1 (1).png" alt="dropdown icon" />
+                </span>
+              </div>
+            </li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </div>
+
+          <div class="icon-box">
+            <li>
+              <span class="account-icon">
+                <img src="./assests/Mask group.png" alt="navicon" />
+              </span>
+            </li>
+            <li>
+              <span class="account-icon">
+                <img src="./assests/bi_cart.png" alt="navicon" />
+              </span>
+            </li>
+          </div>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- CLOSE BUTTON -->
+    <button class="menu-close">✕</button>
+  </header>
+    <!-- 🔹 MAIN CONTENT -->
+    <main class="main-container">
+      <div class="hero-section">
+        <h2>Contact Us</h2>
+        <p class="subtitle">
+          Any question or remarks? Just write us a message!
+        </p>
+      </div>
+      <section class="contact-section">
+        <div class="contact-box">
+          <!-- LEFT INFO -->
+           <div class="left-info-container">
+          <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p>Say something to start a live chat!</p>
+            <div class="left-info-content">
+            <ul class="info-list">
+              <li class="li-icon"><span class="icon"><img src="./assests/bxs_phone-call.png" alt="phone-icon"></span> +012 3456 789</li>
+              <li class="li-icon"><span class="icon"><img src="./assests/ic_sharp-email.png" alt="mail-icon"></span> demo@gmail.com</li>
+              <li class="li-icon">
+                <span class="icon"><img src="./assests/carbon_location-filled.png" alt="location-icon"></span> 132 Dartmouth Street Boston, Massachusetts 02156 United States
+            
+              </li>
+            </ul>
+            </div>
+            <div class="social-icons">
+              <span class="icon"><img src="./assests/twitter-icon.png" alt="icon"></span>
+              <span class="icon"><img src="./assests/insta-icon.png" alt="icon"></span>
+              <span class="icon"><img src="./assests/game-icon.png" alt="icon"></span>
+            </div>
+          </div>
+          </div>
+
+          <!-- RIGHT FORM -->
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-labeld">First Name</label>
+                <input type="text" id="firstName" placeholder="First Name" />
+              </div>
+              <div class="form-group">
+                <label class="form-label">Last Name</label>
+                <input type="text" id="lastName" placeholder="Last Name" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-labeld">Email</label>
+                <input type="email" id="email" placeholder="Email" />
+              </div>
+              <div class="form-group">
+                <label class="form-label">Phone Number</label>
+                <input type="tel" id="phone" placeholder="+1 012 3456 789" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="bold-label">Select Subject?</label>
+              <div class="radio-group">
+                <label
+                  ><input type="radio" name="subject" checked /> General
+                  Inquiry</label
+                >
+                <label><input type="radio" name="subject" /> General Inquiry</label>
+                <label><input type="radio" name="subject" /> General Inquiry</label>
+                <label><input type="radio" name="subject" /> General Inquiry</label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Message</label>
+              <textarea
+                id="message"
+                rows="4"
+                placeholder="Write your message.."
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+      <!-- My Footer -->
+       
+
+      <footer class="footer">
+        <div class="footer-section-h2">
+      <h2>Logo Here</h2>
+    </div>
+  <div class="footer-container">
+    
+
+    <!-- Reach Us -->
+    <div class="footer-section1">
+      <h3>Reach us</h3>
+      <div class="footer-item">
+        <div class="icon"><img src="./assests/bxs_phone-call.png" alt="icon"></div>
+        <p>+1012 3456 789</p>
+      </div>
+      <div class="footer-item">
+        <div class="icon"><img src="./assests/ic_sharp-email.png" alt="icon"></div>
+        <p>demo@gmail.com</p>
+      </div>
+      <div class="footer-item">
+        <div class="icon"><img src="./assests/carbon_location-filled.png" alt="icon"></div>
+        <p>
+          132 Dartmouth Street Boston, Massachusetts 02156 United States
+        </p>
+      </div>
+    </div>
+
+    <!-- Company -->
+     <div class="footer-parent">
+    <div class="footer-section2">
+      <h3>Company</h3>
+      <p>About</p>
+      <p>Contact</p>
+      <p>Blogs</p>
+    </div>
+
+    <div class="footer-section3">
+      <h3>Legal</h3>
+      <p>Privacy Policy</p>
+      <p>Terms & Services</p>
+      <p>Terms of Use</p>
+      <p>Refund Policy</p>
+    </div>
+
+    <div class="footer-section4">
+      <h3>Quick Links</h3>
+      <p>Techlabz Keybox</p>
+      <p>Downloads</p>
+      <p>Forum</p>
+    </div>
+     </div>
+    <!-- Newsletter -->
+    <div class="footer-section newsletter">
+      <h3>Join Our Newsletter</h3>
+      <div class="newsletter-box">
+        <input type="email" placeholder="Your email address" />
+        <button>Subscribe</button>
+      </div>
+      <p class="note">
+        * Will send you weekly updates for your better tool management.
+      </p>
+    </div>
+
+  </div>
+</footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
