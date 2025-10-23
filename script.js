@@ -1,23 +1,21 @@
-const menuOpen = document.querySelector('.menu-open');
-const menuClose = document.querySelector('.menu-close');
-const mobileMenu = document.querySelector('#mobileMenu');
+const menuToggle = document.getElementById("menu-toggle");
+  const navMenu = document.getElementById("nav-menu");
 
-menuOpen.addEventListener('click', () => {
-  mobileMenu.classList.add('active');
-  mobileMenu.style.display = 'flex';
-  // hide hamburger
-  menuOpen.classList.add('hide'); 
-});
+  menuToggle.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+    menuToggle.classList.toggle("open");
+  });
 
-menuClose.addEventListener('click', () => {
-  mobileMenu.classList.remove('active');
-  mobileMenu.style.display = 'none';
-  // show hamburger again
-  menuOpen.classList.remove('hide'); 
-});
+  // Close menu when clicking a link
+  document.querySelectorAll(".nav-links a").forEach((link) => {
+    link.addEventListener("click", () => {
+      navMenu.classList.remove("active");
+      menuToggle.classList.remove("open");
+    });
+  });
 
 
-// form js
+// form js code
 document.getElementById("contactForm").addEventListener("submit", function (e) {
   e.preventDefault();
 
@@ -31,24 +29,24 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
 
   // Validation checks
   if (!first || !email || !msg) {
-    alert("Please fill all required fields!");
+    alert("Please fill all fields");
     return;
   }
 
   if (!emailPattern.test(email)) {
-    alert("Please enter a valid email address!");
+    alert("Please enter a valid email address");
     return;
   }
 
   if (phone && !/^\d+$/.test(phone)) {
-    alert("Phone number should contain digits only!");
+    alert("Phone number should contain digits only");
     return;
   }
 
-  alert("Message sent successfully!");
+  alert("Message sent successfully");
   console.log({ first, email, phone, msg });
 
-  // Reset form after success
+ 
   this.reset();
 });
 

@@ -6,22 +6,63 @@
     <title>Contact Us</title>
     <link rel="stylesheet" href="style.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   </head>
   <body >
     <div class="main-section">
-    <!-- Header Section -->
-    <header class="desktop-header">
+      <header class="header">
+  <div class="navbar-container">
+    <div class="logo">
+      <h2>Logo Here</h2>
+    </div>
+
+    <nav class="navbar" id="nav-menu">
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li class="dropdown">
+          <a href="#">Features</a>
+          <span class="dropdown-icon">
+            <img src="./assests/Arrow 1 (1).png" alt="dropdown icon">
+            
+          </span>
+        </li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+
+      <ul class="icon-box">
+        <li>
+          <span class="account-icon">
+            <img src="./assests/Mask group.png" alt="account icon">
+          </span>
+        </li>
+        <li>
+          <span class="account-icon">
+            <img src="./assests/bi_cart.png" alt="cart icon">
+          </span>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Hamburger Button -->
+    <button class="menu-toggle" id="menu-toggle">
+      <img src="./assests/hamberger.png" alt="menu icon">
+      <span class="close-icon">✕</span>
+    </button>
+  </div>
+</header>
+
+    <!-- <header class="desktop-header">
       <div class="navbar-container">
         <div class="logo">
           <h2>Logo Here</h2>
         </div>
 
-        <!-- Navbar with icons inside list -->
         <nav class="navbar">
           <ul>
             <div class="main_li_1">
@@ -55,13 +96,12 @@
         </nav>
       </div>
       
-    </header>
+    </header> -->
 
-      <!-- HAMBURGER BUTTON -->
-  <button class="menu-open"><img src="./assests/hamberger.png" alt="icon"></button>
+  <!-- <button class="menu-open"><img src="./assests/hamberger.png" alt="icon"></button> -->
 
   <!-- MOBILE MENU OVERLAY -->
-  <header id="mobileMenu">
+  <!-- <header id="mobileMenu">
     <div class="navbar-container2">
       <div class="logo">
         <h2>Logo Here</h2>
@@ -101,10 +141,10 @@
       </nav>
     </div>
 
-    <!-- CLOSE BUTTON -->
+    
     <button class="menu-close">✕</button>
-  </header>
-    <!-- 🔹 MAIN CONTENT -->
+  </header> -->
+
     <main class="main-container">
       <div class="hero-section">
         <h2>Contact Us</h2>
@@ -142,22 +182,23 @@
             <div class="form-row">
               <div class="form-group">
                 <label class="form-labeld">First Name</label>
-                <input type="text" id="firstName" placeholder="First Name" />
+                <input type="text" id="firstName" placeholder="First Name">
               </div>
               <div class="form-group">
                 <label class="form-label">Last Name</label>
-                <input type="text" id="lastName" placeholder="Last Name" />
+                <input type="text" id="lastName" placeholder="Last Name">
+                
               </div>
             </div>
 
             <div class="form-row">
               <div class="form-group">
                 <label class="form-labeld">Email</label>
-                <input type="email" id="email" placeholder="Email" />
+                <input type="email" id="email" placeholder="Email">
               </div>
               <div class="form-group">
                 <label class="form-label">Phone Number</label>
-                <input type="tel" id="phone" placeholder="+1 012 3456 789" />
+                <input type="tel" id="phone" placeholder="+1 012 3456 789">
               </div>
             </div>
 
@@ -165,12 +206,12 @@
               <label class="bold-label">Select Subject?</label>
               <div class="radio-group">
                 <label
-                  ><input type="radio" name="subject" checked /> General
+                  ><input type="radio" name="subject" checked> General
                   Inquiry</label
                 >
-                <label><input type="radio" name="subject" /> General Inquiry</label>
-                <label><input type="radio" name="subject" /> General Inquiry</label>
-                <label><input type="radio" name="subject" /> General Inquiry</label>
+                <label><input type="radio" name="subject" > General Inquiry</label>
+                <label><input type="radio" name="subject" > General Inquiry</label>
+                <label><input type="radio" name="subject" > General Inquiry</label>
               </div>
             </div>
 
@@ -208,11 +249,11 @@
       </div>
       <div class="footer-item">
         <div class="icon"><img src="./assests/ic_sharp-email.png" alt="icon"></div>
-        <p>demo@gmail.com</p>
+        <p class="p">demo@gmail.com</p>
       </div>
       <div class="footer-item">
         <div class="icon"><img src="./assests/carbon_location-filled.png" alt="icon"></div>
-        <p>
+        <p class="p2">
           132 Dartmouth Street Boston, Massachusetts 02156 United States
         </p>
       </div>
@@ -234,6 +275,7 @@
       <p>Terms of Use</p>
       <p>Refund Policy</p>
     </div>
+  
 
     <div class="footer-section4">
       <h3>Quick Links</h3>
@@ -246,7 +288,7 @@
     <div class="footer-section newsletter">
       <h3>Join Our Newsletter</h3>
       <div class="newsletter-box">
-        <input type="email" placeholder="Your email address" />
+        <input type="email" placeholder="Your email address">
         <button>Subscribe</button>
       </div>
       <p class="note">
