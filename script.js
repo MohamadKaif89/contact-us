@@ -1,21 +1,29 @@
-const menuToggle = document.getElementById("menu-toggle");
-  const navMenu = document.getElementById("nav-menu");
+// const menuToggle = document.getElementById("menu-toggle");
+//   const navMenu = document.getElementById("nav-menu");
 
-  menuToggle.addEventListener("click", () => {
-    navMenu.classList.toggle("active");
-    menuToggle.classList.toggle("open");
-  });
-
-  // Close menu when clicking a link
-  document.querySelectorAll(".nav-links a").forEach((link) => {
-    link.addEventListener("click", () => {
-      navMenu.classList.remove("active");
-      menuToggle.classList.remove("open");
-    });
-  });
+//   menuToggle.addEventListener("click", () => {
+//     navMenu.classList.toggle("active");
+//     menuToggle.classList.toggle("open");
+//   });
 
 
-// form js code
+//   document.querySelectorAll(".nav-links a").forEach((link) => {
+//     link.addEventListener("click", () => {
+//       navMenu.classList.remove("active");
+//       menuToggle.classList.remove("open");
+//     });
+//   });
+
+
+let humburger = document.querySelector(".humburger");
+let closed_icon = document.querySelector(".closed_icon")
+
+humburger.addEventListener(click, () =>{
+  console.log("humburger clicked")
+  humburger.style.display : "block"
+})
+
+
 document.getElementById("contactForm").addEventListener("submit", function (e) {
   e.preventDefault();
 
